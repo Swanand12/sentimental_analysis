@@ -45,7 +45,7 @@ def search():
     tokenizer_lang_to_en = AutoTokenizer.from_pretrained("Helsinki-NLP/opus-mt-es-en")
     model_lang_to_en = AutoModelForSeq2SeqLM.from_pretrained("Helsinki-NLP/opus-mt-es-en")
 
-    with open('headlines_backtranslated.csv', mode='w', newline='', encoding='utf-8') as file:
+    with open('headlinesbacktranslated.csv', mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(['Original Headline', 'Back-translated Headline'])
     
